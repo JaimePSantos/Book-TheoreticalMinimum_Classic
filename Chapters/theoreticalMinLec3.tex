@@ -1,0 +1,111 @@
+\documentclass[../main.tex]{subfiles} 
+\begin{document}
+
+\subsection{Aristotle's Law of Motion}
+
+\begin{itemize}
+    \item The velocity of any object is proportional to the total applied
+        force.
+
+        \begin{equation}
+            \vec{F} = m \vec{v}
+        \end{equation}
+
+    \item $m$ is a quantity describing the resistance of the body to being
+        moved.
+
+    \item Aristotle's law is wrong.
+\end{itemize}
+
+\subsection{Mass, Acceleration and Force}
+
+\begin{itemize}
+
+    \item Aristotle's mistake was to think that a net applied force is needed
+        to keep an object moving.
+
+    \item The right idea is that the applied force is needed to overcome the force of friction.
+        
+    \item An isolated object movign in free space, with no forces acting on it,
+        requires nothing to keep it moving. This is the \textit{law of
+        inertia}.
+
+    \item This involves a change in the velocity of an object, and therefore an
+        acceleration. 
+
+    \item Newton's second law of motion
+        \begin{equation}
+            \vec{F} = m\vec{a}
+        \end{equation}
+
+\end{itemize}
+
+\subsection{An Interlude on Units}
+\begin{itemize}
+    \item Velocity
+        \begin{equation}
+            \left[v\right] = \left[\frac{length}{time}\right] = \frac{m}{s}
+        \end{equation}
+
+    \item Acceleration
+        \begin{equation}
+            \left[a\right] = \left[\frac{length}{time}\right]\left[\frac{1}{time}\right] = \frac{m}{s^2}
+        \end{equation}
+
+    \item Force
+        \begin{equation}
+            \left[F\right] = \left[\frac{mass \times length}{time^2}\right] = \frac{kg \times m}{s^2} = N (Newton)
+        \end{equation}
+
+\end{itemize}
+
+\subsection{Some Simple Examples of Solving Newton's Equations}
+\begin{itemize}
+    \item 
+        \begin{equation}
+            m \frac{d\vec{v}}{dt} = 0 \implies \vec{v}(t) = \vec{v}(0)
+        \end{equation}
+
+        This is newtons first law of motion: \textit{ Every object in a state
+        of uniform motion tends to remain in that state of motion unless an
+        external force is applied to it}.
+        
+    \item The first law is simply a special case of the second law when the
+        force is zero.
+
+\end{itemize}
+
+\subsection{Interlude 3: Partial Differentiation - Partial Derivatives}
+\begin{itemize}
+    \item Assume that for every value of $x$, $y$ and $z$, there is a unique
+        value $V(x,y,z)$ that varies smoothly as we vary the coordinates.
+
+    \item Multivariable differential calculus revolves around the concept of
+        \textit{partial derivatives}.
+
+    \item If we want to change $x$ while keeping $y$ and $z$ fixed
+        \begin{equation}
+            \frac{dV}{dx} = \lim_{\Delta x \rightarrow 0} \frac{\Delta V}{\Delta x} = \pdv{V}{x}
+        \end{equation}
+
+        where
+        \begin{equation}
+            \Delta V = V (\left[x + \Delta x\right], y, z) - V(x, y, z)
+        \end{equation}
+
+    \item The second derivative is 
+        \begin{equation}
+            \pdv[order=2]{V}{x} = \partial_x \left(\pdv{V}{x}\right) = \partial_{x,x}V
+        \end{equation}
+
+    \item And a mixed partial derivative
+        \begin{equation}
+            \pdv{V}{x,y} = \partial_x \left(\pdv{V}{y}\right) = \partial_{x,y}V
+        \end{equation}
+
+        which does not depend on the order in which the derivatives are carried
+        out on.
+
+\end{itemize}
+
+\end{document}

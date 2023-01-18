@@ -1,0 +1,122 @@
+\documentclass[../main.tex]{subfiles} 
+\begin{document}
+
+\subsection{Mathematial Interlude: Differential Calculus}
+\begin{itemize}
+    \item Definition of derivative
+        \begin{equation}
+            \frac{d f(t)}{d t}=\lim _{\Delta t \rightarrow 0} \frac{\Delta f}{\Delta t}=\lim _{\Delta t \rightarrow 0} \frac{f(t+\Delta t)-f(t)}{\Delta t}
+        \end{equation}
+
+    \item Sum rule
+        \begin{equation}
+            \frac{d(f+g)}{d t}=\frac{d(f)}{d t}+\frac{d(g)}{d t}
+        \end{equation}
+
+    \item Product rule
+        \begin{equation}
+            \frac{d(f g)}{d t}=f(t) \frac{d(g)}{d t}+g(t) \frac{d(f)}{d t}
+        \end{equation}
+
+    \item Chain rule
+        \begin{equation}
+            \frac{d f}{d t}=\frac{d f}{d g} \frac{d g}{d t}
+        \end{equation}
+
+        if f is a function of g.
+\end{itemize}
+
+\subsection{Particle Motion}
+
+\begin{itemize}
+    \item The position of a particle at time $t$ can be described by
+        $\vec{r}(t)$.
+
+    \item The job of classical mechanics is to figure out $\vec{r}(t)$ from
+        some initial condition and some dynamical law.
+
+    \item The velocity is given by the rate of change of the position
+        \begin{equation}
+            \vec{v} = \frac{d\vec{r}}{dt} = \dot{\vec{r}}
+        \end{equation}
+
+    \item The velocity vector has magnitude $|\vec{v}|$
+        \begin{equation}
+            |\vec{v}|^2 = v_x^2 + v_y^2 + v_z^2
+        \end{equation}
+
+        which represents how fast the particle is moving without regard to the
+        direction. This is called \textit{speed}.  
+
+    \item Acceleration is the quantity that tells you how the velocity is
+        changing. A constant velocity vector not onbly implies constant speed,
+        but also a constant direction.
+        \begin{equation}
+            \vec{a} = \dot{\vec{v}} = \ddot{\vec{r}}
+        \end{equation}
+
+\end{itemize}
+
+\subsection{Interlude 2: Integral Calculus}
+\begin{itemize}
+
+    \item Differential Calculus studies the rates of change. Integral Calculus
+        has to do with sums of many tiny incremental quantities. These are
+        connected.
+        
+    \item Consider a rectangle located at value $t$, with width $\Delta t$ and
+        height $f(t)$. It follows that the area of a single rectangle $\delta
+        A$ is
+
+        \begin{equation}
+            \delta A = f(t)\Delta t
+        \end{equation}
+
+    \item Adding up all the incremental areas
+        \begin{equation}
+            A = \sum_i f(t_i)\Delta t
+        \end{equation}
+
+    \item To get the exact answer, we take the limit in which $\Delta t$
+        shrinks to zero, and the number of rectangles increases to infinity
+
+        \begin{equation}
+            A = \int_a^b f(t) dt = \lim_{\Delta t \rightarrow 0} f(t_i)\Delta t
+        \end{equation}
+
+        which is the definition of an integral between $a$ and $b$.
+
+    \item The indefinite integral of $f(t)$ is
+        \begin{equation}
+            F(T) = \int_a^T f(t) dt
+        \end{equation}
+        where $T$ is an unknown variable which can take any value of $t$. 
+
+    \item The \textit{fundamental theorem of calculus} states that
+        \begin{equation}
+            f(t) = \frac{dF(t)}{dt}
+        \end{equation}
+
+    \item The process of integration and differentiation are reciprocal: The
+        derivative of the integral is the original integrand.
+
+    \item Can we completely determine $F(t)$ knowing that its derivative is
+        $f(t)$. Almost, because adding a costant to $F(t)$ doesnt change its
+        derivative.
+
+    \item Given $f(t)$, its indefinite integral is ambiguous up to a constant.
+
+    \item An alternative way to express the fundamental theorem is
+        \begin{equation}
+            \int_a^b f(t) dt = F(t)|_a^b = F(b) - F(a)
+        \end{equation}
+
+        or
+
+        \begin{equation}
+            \int \frac{df}{dt}dt = f(t) + c
+        \end{equation}
+
+\end{itemize}
+
+\end{document}
