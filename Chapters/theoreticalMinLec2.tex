@@ -1,7 +1,7 @@
 \documentclass[../main.tex]{subfiles} 
 \begin{document}
 
-\subsection{Mathematial Interlude: Differential Calculus}
+\section{Mathematial Interlude: Differential Calculus}
 \begin{itemize}
     \item Definition of derivative
         \begin{equation}
@@ -24,9 +24,15 @@
         \end{equation}
 
         if f is a function of g.
+    \item $\frac{d\left(t^n\right)}{d t}=n t^{n-1}$
+    \item $\frac{d(\sin t)}{d t}  =\cos t$ 
+    \item $\frac{d(\cos t)}{d t}  =-\sin t$ 
+    \item $\frac{d\left(e^t\right)}{d t}  =e^t$
+    \item $\frac{d(\log t)}{d t}  =\frac{1}{t}$
+
 \end{itemize}
 
-\subsection{Particle Motion}
+\section{Particle Motion}
 
 \begin{itemize}
     \item The position of a particle at time $t$ can be described by
@@ -57,7 +63,7 @@
 
 \end{itemize}
 
-\subsection{Interlude 2: Integral Calculus}
+\section{Interlude 2: Integral Calculus}
 \begin{itemize}
 
     \item Differential Calculus studies the rates of change. Integral Calculus
@@ -119,4 +125,37 @@
 
 \end{itemize}
 
+\section{Lecture 2 Exercises}
+\subsection*{Exercise 1: Calculate the derivatives of each of these functions.
+    $\\f(t)=t^4+3 t^3-12 t^2+t-6 \\  g(x)=\sin x-\cos x \\ 
+\theta(\alpha)=e^\alpha+\alpha \ln \alpha \\  x(t)=\sin ^2 x-\cos x $}
+
+\subsubsection*{a)}
+
+\begin{itemize}
+    \item \begin{equation*}\frac{d(f+g)}{d t}=\frac{d f}{d t}+\frac{d g}{d t} \end{equation*} 
+    \item \begin{equation*}\frac{d f}{d t}=4 t^3+9 t^2-24 t+1\end{equation*} 
+\end{itemize}
+
+\subsubsection*{b)}
+
+\begin{itemize}
+    \item \begin{equation*} \frac{d g}{d t}=\cos x+\operatorname{sen} x\end{equation*}
+\end{itemize}
+
+
+\subsubsection*{c)}
+
+\begin{itemize}
+    \item \begin{equation*}\frac{d \theta}{d t}=e^\alpha+\alpha \frac{1}{\alpha}=e^\alpha\end{equation*}
+\end{itemize}
+
+\subsubsection*{d)}
+
+\begin{itemize}
+    \item \begin{equation*} \frac{d(f g)}{d t}=f(t) \frac{d g}{d t}+g(t) \frac{d t}{d t}\end{equation*} 
+    \item \begin{equation*} \sin ^2 t=\sin t \cdot \sin t\end{equation*} 
+    \item \begin{equation*} \frac{d \sin ^2}{d t}=\sin t \cos t+\sin t \cos t=2 \sin t \cos t \end{equation*}
+    \item \begin{equation*} \frac{d x}{d t}=2 \sin t \cos t+\sin t \end{equation*}
+\end{itemize}
 \end{document}
